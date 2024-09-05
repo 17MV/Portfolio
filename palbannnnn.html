@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="img/fav.png">
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="font-montserrat text-black scroll-smooth scroll-snap-y scroll-snap-mandatory">
+
+  <!-- Header Section -->
+  <section id="header" class="fixed z-50 w-full bg-black bg-opacity-60">
+    <div class="container mx-auto flex items-center justify-between px-4 py-2">
+      <div class="brand">
+        <a href="#home" class="text-white text-2xl sm:text-3xl font-bold uppercase">
+          <h1><span class="text-pink-600">M</span>ark <span class="text-pink-600">P</span>alban</h1>
+        </a>
+      </div>
+      <div class="nav-list hidden lg:flex items-center">
+        <ul class="flex space-x-6 md:space-x-8">
+          <li><a href="#home" class="text-white text-base md:text-lg uppercase hover:text-pink-600">Home</a></li>
+          <li><a href="#services" class="text-white text-base md:text-lg uppercase hover:text-pink-600">Services</a></li>
+          <li><a href="#about" class="text-white text-base md:text-lg uppercase hover:text-pink-600">About</a></li>
+          <li><a href="#contact" class="text-white text-base md:text-lg uppercase hover:text-pink-600">Contact</a></li>
+        </ul>
+      </div>
+      <div class="hamburger lg:hidden flex items-center cursor-pointer">
+        <div class="bar bg-white h-1 w-6 sm:w-8 mb-1"></div>
+        <div class="bar bg-white h-1 w-6 sm:w-8 mb-1"></div>
+        <div class="bar bg-white h-1 w-6 sm:w-8"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Home Section -->
+  <section id="home" class="h-screen bg-cover bg-center relative scroll-snap-start" style="background-image: url('./img/bg.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="container mx-auto flex justify-center items-center h-full relative z-10 text-center">
+      <div>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl text-white animate-fadeIn">Hello, <span class="text-crimson"></span></h1>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl text-white animate-fadeIn delay-500">My Name is <span class="text-crimson"></span></h1>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl text-pink-600 font-bold animate-fadeIn delay-1000">Mark Vincent <span></span></h1>
+        <a href="#about" class="mt-4 md:mt-8 inline-block bg-transparent border-2 border-pink-600 text-white text-lg md:text-2xl uppercase py-2 px-4 md:py-2 md:px-6 transition duration-300 hover:bg-pink-600">Know Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-12 sm:py-16 scroll-snap-start">
+    <div class="container mx-auto text-center">
+      <div class="mb-6 sm:mb-8">
+        <h1 class="text-3xl sm:text-4xl md:text-6xl font-light uppercase tracking-widest text-black">Serv<span class="text-pink-600">i</span>ces</h1>
+        <p class="text-base sm:text-lg mt-2">Google Developer Student Club Lead in Cristal e-College</p>
+        <p class="text-base sm:text-lg">Computer Studies Council Governor in Cristal e-College</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <!-- Service Items -->
+        <div class="service-item relative p-4 sm:p-6 bg-gradient-to-r from-gray-800 to-gray-700 text-white rounded-lg">
+          <div class="icon mb-4">
+            <img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="Tutoring Icon">
+          </div>
+          <h2 class="text-xl sm:text-2xl uppercase mb-2">Tutoring</h2>
+          <p class="text-sm sm:text-base">Offer assistance in various subjects such as mathematics, science, languages, and social studies. Specialized tutoring in areas like SAT/ACT prep, coding, or specific college courses is also common.</p>
+        </div>
+        <div class="service-item relative p-4 sm:p-6 bg-gradient-to-r from-gray-800 to-gray-700 text-white rounded-lg">
+          <div class="icon mb-4">
+            <img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="Consultation Icon">
+          </div>
+          <h2 class="text-xl sm:text-2xl uppercase mb-2">Animation</h2>
+          <p class="text-sm sm:text-base">Services can include 2D animation, 3D animation, motion graphics, and stop-motion animation. Each type has different uses, from educational videos to entertainment content.</p>
+        </div>
+        <div class="service-item relative p-4 sm:p-6 bg-gradient-to-r from-gray-800 to-gray-700 text-white rounded-lg">
+          <div class="icon mb-4">
+            <img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="Design Icon">
+          </div>
+          <h2 class="text-xl sm:text-2xl uppercase mb-2">Web Programming</h2>
+          <p class="text-sm sm:text-base">This involves designing the visual elements of a website, using languages like HTML, CSS, and JavaScript. Front-end developers ensure that a site is user-friendly and visually appealing.</p>
+        </div>
+        <div class="service-item relative p-4 sm:p-6 bg-gradient-to-r from-gray-800 to-gray-700 text-white rounded-lg">
+          <div class="icon mb-4">
+            <img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="SEO Icon">
+          </div>
+          <h2 class="text-xl sm:text-2xl uppercase mb-2">Photo Editing</h2>
+          <p class="text-sm sm:text-base">Includes adjustments like cropping, resizing, color correction, and exposure adjustments. Often used for improving everyday photos or preparing them for social media.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+<section id="about" class="flex flex-col-reverse lg:flex-row items-center text-center lg:text-left max-w-6xl mx-auto py-12 sm:py-24 px-4 sm:px-5">
+  <div class="col-left w-full max-w-[300px] sm:max-w-[500px] md:max-w-[700px] mb-8 lg:mb-0">
+    <div class="about-img relative border-8 sm:border-12 border-white w-full h-auto">
+      <img src="./img/palban.jpg" alt="Mark Palban" class="w-full h-auto object-cover">
+      <div class="absolute top-[-12px] sm:top-[-24px] left-[-18px] sm:left-[-36px] w-[108%] sm:w-[104%] h-[108%] sm:h-[104%] border-4 sm:border-8 border-pink-600 z-[-1]"></div>
+    </div>
+  </div>
+  <div class="col-right w-full px-4 flex flex-col items-center">
+    <h1 class="text-3xl sm:text-4xl md:text-6xl font-light uppercase tracking-widest mb-6 sm:mb-8">About <span class="text-pink-600">Me</span></h1>
+    <h2 class="text-lg sm:text-xl md:text-2xl font-medium tracking-wider mb-2.5">Overview</h2>
+    <p class="text-sm sm:text-base mb-4 sm:mb-5">Hello, My name is Mark Vincent Bapilar Palban and I was born on the 17th day of November in the year 2002, at the small village of Hagbuyo, San Miguel, Bohol. I am the eldest son and my brother is fourteen years old. My parents were Paul William L. Palban and Maria Linda B. Palban. My religion is Roman Catholic, and I can speak English, Filipino, and Cebuano languages. I take-up Bachelor of Science in Information Technology in Cristal e-College.</p>
+    <a href="#" class="bg-transparent border-2 border-pink-600 text-black text-base sm:text-lg md:text-xl lg:text-2xl uppercase py-2 px-4 sm:py-2 sm:px-6 lg:py-3 lg:px-8 transition duration-300 hover:bg-pink-600">Know Me More</a>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-12 sm:py-16 bg-gray-100 scroll-snap-start">
+    <div class="container mx-auto text-center">
+      <h1 class="text-3xl sm:text-4xl md:text-6xl font-light uppercase tracking-widest mb-6 sm:mb-8">Contact <span class="text-pink-600">Info</span></h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div class="contact-item p-4 sm:p-6 bg-white shadow-md rounded-lg">
+          <div class="icon mb-4">
+            <img src="https://img.icons8.com/bubbles/100/000000/phone.png" alt="Phone Icon">
+          </div>
+          <div class="contact-info">
+            <h1 class="text-xl sm:text-2xl mb-2">Phone</h1>
+            <h2 class="text-base sm:text-lg mb-1">09123456789</h2>
+            <h2 class="text-base sm:text-lg">09690445235</h2>
+          </div>
+        </div>
+        <div class="contact-item p-4 sm:p-6 bg-white shadow-md rounded-lg">
+          <div class="icon mb-4">
+            <img src="https://img.icons8.com/bubbles/100/000000/email.png" alt="Email Icon">
+          </div>
+          <div class="contact-info">
+            <h1 class="text-xl sm:text-2xl mb-2">Email</h1>
+            <h2 class="text-base sm:text-lg">marknablap@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item p-4 sm:p-6 bg-white shadow-md rounded-lg">
+          <div class="icon mb-4">
+            <img src="https://img.icons8.com/bubbles/100/000000/address.png" alt="Address Icon">
+          </div>
+          <div class="contact-info">
+            <h1 class="text-xl sm:text-2xl mb-2">Address</h1>
+            <h2 class="text-base sm:text-lg">Hagbuyo, San Miguel, Bohol</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <section id="footer" class="bg-gradient-to-r from-gray-800 to-gray-700 py-6 sm:py-8 text-white text-center">
+    <div class="container mx-auto">
+      <div class="brand mb-4">
+        <h1 class="text-2xl sm:text-3xl uppercase"><span class="text-pink-600">M</span>ark <span class="text-pink-600">P</span>alban</h1>
+      </div>
+      <h2 class="text-lg sm:text-xl mb-4">BSIT STUDENT</h2>
+      <div class="flex justify-center mb-4">
+        <a href="#" class="mx-2"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" alt="Facebook"></a>
+        <a href="#" class="mx-2"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" alt="Instagram"></a>
+        <a href="#" class="mx-2"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" alt="Behance"></a>
+      </div>
+      <p class="text-sm sm:text-base">Copyright © 2024 Palban. All rights reserved</p>
+    </div>
+  </section>
+
+</body>
+
+</html>
